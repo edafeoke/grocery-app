@@ -6,15 +6,18 @@ This is a simple grocery app built with FastAPI.
 
 1. Install dependencies:
     ```bash
-    pip install fastapi sqlalchemy "passlib[bcryt]"
+    python3 -m venv venv
+    source venv/bin/activate
+    pip install -r requirements.txt
     ```
 
 2. Run the application:
     ```bash
-    uvicorn app.main:app --reload
+    fastapi dev
     ```
 
 ## Endpoints
 
-- `GET /items/`: Get all items
-- `POST /items/`: Create a new item
+- `POST /users/`: Create user
+- `POST /users/me`: Get current user
+### To be updated soon...

@@ -1,5 +1,6 @@
 from pydantic import BaseModel
 # from typing import Optional
+from datetime import datetime
 
 
 class UserBase(BaseModel):
@@ -15,6 +16,8 @@ class User(UserBase):
     id: int
     is_active: bool
     is_admin: bool
+    created_at: datetime = datetime.now()
+    updated_at: datetime = datetime.now()
 
     class Config:
         orm_mode = True

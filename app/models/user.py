@@ -1,6 +1,7 @@
-from sqlalchemy import Boolean, Column, Integer, String, Float
-# from sqlalchemy.orm import relationship
+from sqlalchemy import Boolean, Column, Integer, String, Float, DateTime
+from sqlalchemy.orm import relationship
 from ..database import Base
+from datetime import datetime
 
 
 class User(Base):
@@ -13,3 +14,6 @@ class User(Base):
     balance = Column(Float)
     is_active = Column(Boolean, default=True)
     is_admin = Column(Boolean, default=False)
+    updated_at = Column(DateTime, default=datetime.now())
+    created_at = Column(DateTime, default=datetime.now())
+    orders = relationship("Order", back_populates="user")

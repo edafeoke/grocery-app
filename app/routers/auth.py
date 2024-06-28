@@ -6,7 +6,7 @@ from .. import schemas, utils
 from ..schemas.user import Login
 from ..dependencies import get_db, verify_password, create_access_token
 
-router = APIRouter()
+router = APIRouter(tags=['Authentication'])
 
 
 @router.post("/token", response_model=schemas.token.Token)

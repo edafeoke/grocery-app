@@ -64,6 +64,14 @@
         "documentation": {}
     },
     {
+        "label": "sessionmaker",
+        "importPath": "sqlalchemy.orm",
+        "description": "sqlalchemy.orm",
+        "isExtraImport": true,
+        "detail": "sqlalchemy.orm",
+        "documentation": {}
+    },
+    {
         "label": "APIRouter",
         "importPath": "fastapi",
         "description": "fastapi",
@@ -264,6 +272,14 @@
         "documentation": {}
     },
     {
+        "label": "create_engine",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
         "label": "Annotated",
         "importPath": "typing",
         "description": "typing",
@@ -273,6 +289,14 @@
     },
     {
         "label": "List",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Optional",
         "importPath": "typing",
         "description": "typing",
         "isExtraImport": true,
@@ -385,6 +409,47 @@
         "documentation": {}
     },
     {
+        "label": "pytest",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "pytest",
+        "description": "pytest",
+        "detail": "pytest",
+        "documentation": {}
+    },
+    {
+        "label": "Base",
+        "importPath": "app.database",
+        "description": "app.database",
+        "isExtraImport": true,
+        "detail": "app.database",
+        "documentation": {}
+    },
+    {
+        "label": "User",
+        "importPath": "app.models.user",
+        "description": "app.models.user",
+        "isExtraImport": true,
+        "detail": "app.models.user",
+        "documentation": {}
+    },
+    {
+        "label": "TestClient",
+        "importPath": "fastapi.testclient",
+        "description": "fastapi.testclient",
+        "isExtraImport": true,
+        "detail": "fastapi.testclient",
+        "documentation": {}
+    },
+    {
+        "label": "app",
+        "importPath": "app.main",
+        "description": "app.main",
+        "isExtraImport": true,
+        "detail": "app.main",
+        "documentation": {}
+    },
+    {
         "label": "get_product",
         "kind": 2,
         "importPath": "app.crud.product",
@@ -398,7 +463,7 @@
         "kind": 2,
         "importPath": "app.crud.product",
         "description": "app.crud.product",
-        "peekOfCode": "def get_products(db: Session, skip: int = 0, limit: int = 10):\n    return db.query(models.Product).offset(skip).limit(limit).all()\ndef create_product(db: Session, product: schemas.ProductCreate):\n    db_product = models.Product(**product.dict())\n    db.add(db_product)\n    db.commit()\n    db.refresh(db_product)\n    return db_product",
+        "peekOfCode": "def get_products(db: Session, skip: int = 0, limit: int = 10):\n    return db.query(models.Product).offset(skip).limit(limit).all()\ndef create_product(db: Session, product: schemas.ProductCreate):\n    db_product = models.Product(**product.dict())\n    db.add(db_product)\n    db.commit()\n    db.refresh(db_product)\n    return db_product\ndef update_product(db: Session, product_id: int, product: schemas.ProductUpdate):\n    db_product = db.query(models.Product).filter(",
         "detail": "app.crud.product",
         "documentation": {}
     },
@@ -407,7 +472,25 @@
         "kind": 2,
         "importPath": "app.crud.product",
         "description": "app.crud.product",
-        "peekOfCode": "def create_product(db: Session, product: schemas.ProductCreate):\n    db_product = models.Product(**product.dict())\n    db.add(db_product)\n    db.commit()\n    db.refresh(db_product)\n    return db_product",
+        "peekOfCode": "def create_product(db: Session, product: schemas.ProductCreate):\n    db_product = models.Product(**product.dict())\n    db.add(db_product)\n    db.commit()\n    db.refresh(db_product)\n    return db_product\ndef update_product(db: Session, product_id: int, product: schemas.ProductUpdate):\n    db_product = db.query(models.Product).filter(\n        models.Product.id == product_id).first()\n    if db_product:",
+        "detail": "app.crud.product",
+        "documentation": {}
+    },
+    {
+        "label": "update_product",
+        "kind": 2,
+        "importPath": "app.crud.product",
+        "description": "app.crud.product",
+        "peekOfCode": "def update_product(db: Session, product_id: int, product: schemas.ProductUpdate):\n    db_product = db.query(models.Product).filter(\n        models.Product.id == product_id).first()\n    if db_product:\n        update_data = product.dict(exclude_unset=True)\n        for key, value in update_data.items():\n            setattr(db_product, key, value)\n        db.commit()\n        db.refresh(db_product)\n    return db_product",
+        "detail": "app.crud.product",
+        "documentation": {}
+    },
+    {
+        "label": "delete_product",
+        "kind": 2,
+        "importPath": "app.crud.product",
+        "description": "app.crud.product",
+        "peekOfCode": "def delete_product(db: Session, product_id: int):\n    db_product = db.query(models.Product).filter(\n        models.Product.id == product_id).first()\n    if db_product:\n        db.delete(db_product)\n        db.commit()\n    return db_product",
         "detail": "app.crud.product",
         "documentation": {}
     },
@@ -479,7 +562,7 @@
         "kind": 2,
         "importPath": "app.routers.products",
         "description": "app.routers.products",
-        "peekOfCode": "def create_product(product: schemas.ProductCreate, db: Session = Depends(get_db)):\n    return crud.create_product(db=db, product=product)\n@router.get(\"/products/\", response_model=List[schemas.Product])\ndef read_products(skip: int = 0, limit: int = 10, db: Session = Depends(get_db)):\n    products = crud.get_products(db, skip=skip, limit=limit)\n    return products",
+        "peekOfCode": "def create_product(product: schemas.ProductCreate, db: Session = Depends(get_db)):\n    return crud.create_product(db=db, product=product)\n@router.get(\"/products/\", response_model=List[schemas.Product])\ndef read_products(skip: int = 0, limit: int = 10, db: Session = Depends(get_db)):\n    products = crud.get_products(db, skip=skip, limit=limit)\n    return products\n@router.put(\"/products/{id}\", response_model=List[schemas.Product])\ndef read_products(id: int, db: Session = Depends(get_db)):\n    products = crud.get_products(db, skip=skip, limit=limit)\n    return products",
         "detail": "app.routers.products",
         "documentation": {}
     },
@@ -488,7 +571,16 @@
         "kind": 2,
         "importPath": "app.routers.products",
         "description": "app.routers.products",
-        "peekOfCode": "def read_products(skip: int = 0, limit: int = 10, db: Session = Depends(get_db)):\n    products = crud.get_products(db, skip=skip, limit=limit)\n    return products",
+        "peekOfCode": "def read_products(skip: int = 0, limit: int = 10, db: Session = Depends(get_db)):\n    products = crud.get_products(db, skip=skip, limit=limit)\n    return products\n@router.put(\"/products/{id}\", response_model=List[schemas.Product])\ndef read_products(id: int, db: Session = Depends(get_db)):\n    products = crud.get_products(db, skip=skip, limit=limit)\n    return products",
+        "detail": "app.routers.products",
+        "documentation": {}
+    },
+    {
+        "label": "read_products",
+        "kind": 2,
+        "importPath": "app.routers.products",
+        "description": "app.routers.products",
+        "peekOfCode": "def read_products(id: int, db: Session = Depends(get_db)):\n    products = crud.get_products(db, skip=skip, limit=limit)\n    return products",
         "detail": "app.routers.products",
         "documentation": {}
     },
@@ -497,7 +589,7 @@
         "kind": 5,
         "importPath": "app.routers.products",
         "description": "app.routers.products",
-        "peekOfCode": "router = APIRouter()\n@router.post(\"/products/\", response_model=schemas.Product)\ndef create_product(product: schemas.ProductCreate, db: Session = Depends(get_db)):\n    return crud.create_product(db=db, product=product)\n@router.get(\"/products/\", response_model=List[schemas.Product])\ndef read_products(skip: int = 0, limit: int = 10, db: Session = Depends(get_db)):\n    products = crud.get_products(db, skip=skip, limit=limit)\n    return products",
+        "peekOfCode": "router = APIRouter()\n@router.post(\"/products/\", response_model=schemas.Product)\ndef create_product(product: schemas.ProductCreate, db: Session = Depends(get_db)):\n    return crud.create_product(db=db, product=product)\n@router.get(\"/products/\", response_model=List[schemas.Product])\ndef read_products(skip: int = 0, limit: int = 10, db: Session = Depends(get_db)):\n    products = crud.get_products(db, skip=skip, limit=limit)\n    return products\n@router.put(\"/products/{id}\", response_model=List[schemas.Product])\ndef read_products(id: int, db: Session = Depends(get_db)):",
         "detail": "app.routers.products",
         "documentation": {}
     },
@@ -533,7 +625,7 @@
         "kind": 6,
         "importPath": "app.schemas.product",
         "description": "app.schemas.product",
-        "peekOfCode": "class ProductBase(BaseModel):\n    name: str\n    description: str\n    price: float\nclass ProductCreate(ProductBase):\n    pass\nclass Product(ProductBase):\n    id: int\n    class Config:\n        orm_mode = True",
+        "peekOfCode": "class ProductBase(BaseModel):\n    name: str\n    description: str\n    price: float\nclass ProductCreate(ProductBase):\n    pass\nclass ProductUpdate(BaseModel):\n    name: Optional[str] = None\n    description: Optional[str] = None\n    price: Optional[float] = None",
         "detail": "app.schemas.product",
         "documentation": {}
     },
@@ -542,7 +634,16 @@
         "kind": 6,
         "importPath": "app.schemas.product",
         "description": "app.schemas.product",
-        "peekOfCode": "class ProductCreate(ProductBase):\n    pass\nclass Product(ProductBase):\n    id: int\n    class Config:\n        orm_mode = True",
+        "peekOfCode": "class ProductCreate(ProductBase):\n    pass\nclass ProductUpdate(BaseModel):\n    name: Optional[str] = None\n    description: Optional[str] = None\n    price: Optional[float] = None\nclass Product(ProductBase):\n    id: int\n    class Config:\n        orm_mode = True",
+        "detail": "app.schemas.product",
+        "documentation": {}
+    },
+    {
+        "label": "ProductUpdate",
+        "kind": 6,
+        "importPath": "app.schemas.product",
+        "description": "app.schemas.product",
+        "peekOfCode": "class ProductUpdate(BaseModel):\n    name: Optional[str] = None\n    description: Optional[str] = None\n    price: Optional[float] = None\nclass Product(ProductBase):\n    id: int\n    class Config:\n        orm_mode = True",
         "detail": "app.schemas.product",
         "documentation": {}
     },
@@ -742,6 +843,96 @@
         "description": "app.utils",
         "peekOfCode": "pwd_context = CryptContext(schemes=[\"bcrypt\"], deprecated=\"auto\")\ndef get_db():\n    db = SessionLocal()\n    try:\n        yield db\n    finally:\n        db.close()\ndef verify_password(plain_password, hashed_password):\n    return pwd_context.verify(plain_password, hashed_password)\ndef get_password_hash(password):",
         "detail": "app.utils",
+        "documentation": {}
+    },
+    {
+        "label": "db",
+        "kind": 2,
+        "importPath": "tests.conftest",
+        "description": "tests.conftest",
+        "peekOfCode": "def db():\n    Base.metadata.create_all(bind=engine)\n    db = TestingSessionLocal()\n    try:\n        yield db\n    finally:\n        db.close()\n        Base.metadata.drop_all(bind=engine)\n@pytest.fixture(scope=\"function\")\ndef test_user(db):",
+        "detail": "tests.conftest",
+        "documentation": {}
+    },
+    {
+        "label": "test_user",
+        "kind": 2,
+        "importPath": "tests.conftest",
+        "description": "tests.conftest",
+        "peekOfCode": "def test_user(db):\n    user = User(username=\"testuser\",\n                email=\"testuser@example.com\", password=\"password\")\n    db.add(user)\n    db.commit()\n    db.refresh(user)\n    return user",
+        "detail": "tests.conftest",
+        "documentation": {}
+    },
+    {
+        "label": "DATABASE_URL",
+        "kind": 5,
+        "importPath": "tests.conftest",
+        "description": "tests.conftest",
+        "peekOfCode": "DATABASE_URL = \"sqlite:///./test.db\"\nengine = create_engine(DATABASE_URL, connect_args={\"check_same_thread\": False})\nTestingSessionLocal = sessionmaker(\n    autocommit=False, autoflush=False, bind=engine)\n@pytest.fixture(scope=\"session\")\ndef db():\n    Base.metadata.create_all(bind=engine)\n    db = TestingSessionLocal()\n    try:\n        yield db",
+        "detail": "tests.conftest",
+        "documentation": {}
+    },
+    {
+        "label": "engine",
+        "kind": 5,
+        "importPath": "tests.conftest",
+        "description": "tests.conftest",
+        "peekOfCode": "engine = create_engine(DATABASE_URL, connect_args={\"check_same_thread\": False})\nTestingSessionLocal = sessionmaker(\n    autocommit=False, autoflush=False, bind=engine)\n@pytest.fixture(scope=\"session\")\ndef db():\n    Base.metadata.create_all(bind=engine)\n    db = TestingSessionLocal()\n    try:\n        yield db\n    finally:",
+        "detail": "tests.conftest",
+        "documentation": {}
+    },
+    {
+        "label": "TestingSessionLocal",
+        "kind": 5,
+        "importPath": "tests.conftest",
+        "description": "tests.conftest",
+        "peekOfCode": "TestingSessionLocal = sessionmaker(\n    autocommit=False, autoflush=False, bind=engine)\n@pytest.fixture(scope=\"session\")\ndef db():\n    Base.metadata.create_all(bind=engine)\n    db = TestingSessionLocal()\n    try:\n        yield db\n    finally:\n        db.close()",
+        "detail": "tests.conftest",
+        "documentation": {}
+    },
+    {
+        "label": "test_app_initialization",
+        "kind": 2,
+        "importPath": "tests.test_main",
+        "description": "tests.test_main",
+        "peekOfCode": "def test_app_initialization():\n    \"\"\"\n    Test if the FastAPI app initializes correctly.\n    \"\"\"\n    response = client.get(\"/\")\n    assert response.status_code == 404  # Assuming no root endpoint defined\ndef test_auth_router():\n    \"\"\"\n    Test if the auth router is included.\n    \"\"\"",
+        "detail": "tests.test_main",
+        "documentation": {}
+    },
+    {
+        "label": "test_auth_router",
+        "kind": 2,
+        "importPath": "tests.test_main",
+        "description": "tests.test_main",
+        "peekOfCode": "def test_auth_router():\n    \"\"\"\n    Test if the auth router is included.\n    \"\"\"\n    response = client.post(\"/auth/login\", json={\"username\": \"test\", \"password\": \"test\"})\n    # Adjust according to your actual auth endpoints and expected responses\n    assert response.status_code in {200, 401, 404}  # Adjust expected status codes\ndef test_users_router():\n    \"\"\"\n    Test if the users router is included.",
+        "detail": "tests.test_main",
+        "documentation": {}
+    },
+    {
+        "label": "test_users_router",
+        "kind": 2,
+        "importPath": "tests.test_main",
+        "description": "tests.test_main",
+        "peekOfCode": "def test_users_router():\n    \"\"\"\n    Test if the users router is included.\n    \"\"\"\n    response = client.get(\"/users\")\n    # Adjust according to your actual users endpoints and expected responses\n    assert response.status_code in {200, 401, 404}\ndef test_products_router():\n    \"\"\"\n    Test if the products router is included.",
+        "detail": "tests.test_main",
+        "documentation": {}
+    },
+    {
+        "label": "test_products_router",
+        "kind": 2,
+        "importPath": "tests.test_main",
+        "description": "tests.test_main",
+        "peekOfCode": "def test_products_router():\n    \"\"\"\n    Test if the products router is included.\n    \"\"\"\n    response = client.get(\"/products\")\n    # Adjust according to your actual products endpoints and expected responses\n    assert response.status_code in {200, 401, 404}",
+        "detail": "tests.test_main",
+        "documentation": {}
+    },
+    {
+        "label": "client",
+        "kind": 5,
+        "importPath": "tests.test_main",
+        "description": "tests.test_main",
+        "peekOfCode": "client = TestClient(app)\ndef test_app_initialization():\n    \"\"\"\n    Test if the FastAPI app initializes correctly.\n    \"\"\"\n    response = client.get(\"/\")\n    assert response.status_code == 404  # Assuming no root endpoint defined\ndef test_auth_router():\n    \"\"\"\n    Test if the auth router is included.",
+        "detail": "tests.test_main",
         "documentation": {}
     }
 ]

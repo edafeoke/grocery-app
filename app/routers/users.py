@@ -3,7 +3,7 @@ from sqlalchemy.orm import Session
 from .. import schemas, utils, crud
 from ..dependencies import get_db, get_current_active_user
 
-router = APIRouter()
+router = APIRouter(tags=['User'])
 
 
 @router.post("/users/", response_model=schemas.User)

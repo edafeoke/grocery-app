@@ -1,9 +1,9 @@
 from fastapi import FastAPI
-from .routers import auth, users, products, orders
+from .routers import auth, users, products, orders, admin
 from .database import engine, Base
 
 # Drop all tables (for development purposes)
-Base.metadata.drop_all(bind=engine)
+# Base.metadata.drop_all(bind=engine)
 
 Base.metadata.create_all(bind=engine)
 
@@ -13,3 +13,4 @@ app.include_router(auth.router)
 app.include_router(users.router)
 app.include_router(products.router)
 app.include_router(orders.router)
+app.include_router(admin.router, prefix="/admin")

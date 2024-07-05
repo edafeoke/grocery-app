@@ -24,6 +24,38 @@
         "documentation": {}
     },
     {
+        "label": "relationship",
+        "importPath": "sqlalchemy.orm",
+        "description": "sqlalchemy.orm",
+        "isExtraImport": true,
+        "detail": "sqlalchemy.orm",
+        "documentation": {}
+    },
+    {
+        "label": "relationship",
+        "importPath": "sqlalchemy.orm",
+        "description": "sqlalchemy.orm",
+        "isExtraImport": true,
+        "detail": "sqlalchemy.orm",
+        "documentation": {}
+    },
+    {
+        "label": "Session",
+        "importPath": "sqlalchemy.orm",
+        "description": "sqlalchemy.orm",
+        "isExtraImport": true,
+        "detail": "sqlalchemy.orm",
+        "documentation": {}
+    },
+    {
+        "label": "Session",
+        "importPath": "sqlalchemy.orm",
+        "description": "sqlalchemy.orm",
+        "isExtraImport": true,
+        "detail": "sqlalchemy.orm",
+        "documentation": {}
+    },
+    {
         "label": "Session",
         "importPath": "sqlalchemy.orm",
         "description": "sqlalchemy.orm",
@@ -69,6 +101,38 @@
         "description": "sqlalchemy.orm",
         "isExtraImport": true,
         "detail": "sqlalchemy.orm",
+        "documentation": {}
+    },
+    {
+        "label": "HTTPException",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "status",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "HTTPException",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "status",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
         "documentation": {}
     },
     {
@@ -105,6 +169,30 @@
     },
     {
         "label": "status",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "APIRouter",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "Depends",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "HTTPException",
         "importPath": "fastapi",
         "description": "fastapi",
         "isExtraImport": true,
@@ -192,6 +280,22 @@
         "documentation": {}
     },
     {
+        "label": "ResponseValidationError",
+        "importPath": "fastapi.exceptions",
+        "description": "fastapi.exceptions",
+        "isExtraImport": true,
+        "detail": "fastapi.exceptions",
+        "documentation": {}
+    },
+    {
+        "label": "IntegrityError",
+        "importPath": "sqlalchemy.exc",
+        "description": "sqlalchemy.exc",
+        "isExtraImport": true,
+        "detail": "sqlalchemy.exc",
+        "documentation": {}
+    },
+    {
         "label": "Column",
         "importPath": "sqlalchemy",
         "description": "sqlalchemy",
@@ -217,6 +321,86 @@
     },
     {
         "label": "Float",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "ForeignKey",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "DateTime",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "Column",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "Integer",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "String",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "Float",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "DateTime",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "Column",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "Integer",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "String",
         "importPath": "sqlalchemy",
         "description": "sqlalchemy",
         "isExtraImport": true,
@@ -232,23 +416,7 @@
         "documentation": {}
     },
     {
-        "label": "Column",
-        "importPath": "sqlalchemy",
-        "description": "sqlalchemy",
-        "isExtraImport": true,
-        "detail": "sqlalchemy",
-        "documentation": {}
-    },
-    {
-        "label": "Integer",
-        "importPath": "sqlalchemy",
-        "description": "sqlalchemy",
-        "isExtraImport": true,
-        "detail": "sqlalchemy",
-        "documentation": {}
-    },
-    {
-        "label": "String",
+        "label": "DateTime",
         "importPath": "sqlalchemy",
         "description": "sqlalchemy",
         "isExtraImport": true,
@@ -280,6 +448,78 @@
         "documentation": {}
     },
     {
+        "label": "datetime",
+        "importPath": "datetime",
+        "description": "datetime",
+        "isExtraImport": true,
+        "detail": "datetime",
+        "documentation": {}
+    },
+    {
+        "label": "datetime",
+        "importPath": "datetime",
+        "description": "datetime",
+        "isExtraImport": true,
+        "detail": "datetime",
+        "documentation": {}
+    },
+    {
+        "label": "datetime",
+        "importPath": "datetime",
+        "description": "datetime",
+        "isExtraImport": true,
+        "detail": "datetime",
+        "documentation": {}
+    },
+    {
+        "label": "datetime",
+        "importPath": "datetime",
+        "description": "datetime",
+        "isExtraImport": true,
+        "detail": "datetime",
+        "documentation": {}
+    },
+    {
+        "label": "datetime",
+        "importPath": "datetime",
+        "description": "datetime",
+        "isExtraImport": true,
+        "detail": "datetime",
+        "documentation": {}
+    },
+    {
+        "label": "datetime",
+        "importPath": "datetime",
+        "description": "datetime",
+        "isExtraImport": true,
+        "detail": "datetime",
+        "documentation": {}
+    },
+    {
+        "label": "datetime",
+        "importPath": "datetime",
+        "description": "datetime",
+        "isExtraImport": true,
+        "detail": "datetime",
+        "documentation": {}
+    },
+    {
+        "label": "timedelta",
+        "importPath": "datetime",
+        "description": "datetime",
+        "isExtraImport": true,
+        "detail": "datetime",
+        "documentation": {}
+    },
+    {
+        "label": "timezone",
+        "importPath": "datetime",
+        "description": "datetime",
+        "isExtraImport": true,
+        "detail": "datetime",
+        "documentation": {}
+    },
+    {
         "label": "Annotated",
         "importPath": "typing",
         "description": "typing",
@@ -289,6 +529,14 @@
     },
     {
         "label": "List",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Optional",
         "importPath": "typing",
         "description": "typing",
         "isExtraImport": true,
@@ -352,35 +600,19 @@
         "documentation": {}
     },
     {
+        "label": "BaseModel",
+        "importPath": "pydantic",
+        "description": "pydantic",
+        "isExtraImport": true,
+        "detail": "pydantic",
+        "documentation": {}
+    },
+    {
         "label": "declarative_base",
         "importPath": "sqlalchemy.ext.declarative",
         "description": "sqlalchemy.ext.declarative",
         "isExtraImport": true,
         "detail": "sqlalchemy.ext.declarative",
-        "documentation": {}
-    },
-    {
-        "label": "datetime",
-        "importPath": "datetime",
-        "description": "datetime",
-        "isExtraImport": true,
-        "detail": "datetime",
-        "documentation": {}
-    },
-    {
-        "label": "timedelta",
-        "importPath": "datetime",
-        "description": "datetime",
-        "isExtraImport": true,
-        "detail": "datetime",
-        "documentation": {}
-    },
-    {
-        "label": "timezone",
-        "importPath": "datetime",
-        "description": "datetime",
-        "isExtraImport": true,
-        "detail": "datetime",
         "documentation": {}
     },
     {
@@ -450,6 +682,51 @@
         "documentation": {}
     },
     {
+        "label": "get_order",
+        "kind": 2,
+        "importPath": "app.crud.order",
+        "description": "app.crud.order",
+        "peekOfCode": "def get_order(db: Session, order_id: int):\n    return db.query(models.Order).filter(models.Order.id == order_id).first()\ndef get_orders(db: Session, skip: int = 0, limit: int = 10):\n    return db.query(models.Order).offset(skip).limit(limit).all()\ndef create_order(db: Session, order: schemas.OrderCreate):\n    db_order = models.Order(**order.dict())\n    db.add(db_order)\n    db.commit()\n    db.refresh(db_order)\n    return db_order",
+        "detail": "app.crud.order",
+        "documentation": {}
+    },
+    {
+        "label": "get_orders",
+        "kind": 2,
+        "importPath": "app.crud.order",
+        "description": "app.crud.order",
+        "peekOfCode": "def get_orders(db: Session, skip: int = 0, limit: int = 10):\n    return db.query(models.Order).offset(skip).limit(limit).all()\ndef create_order(db: Session, order: schemas.OrderCreate):\n    db_order = models.Order(**order.dict())\n    db.add(db_order)\n    db.commit()\n    db.refresh(db_order)\n    return db_order\ndef update_order(db: Session, order_id: int, order: schemas.OrderUpdate):\n    db_order = db.query(models.Order).filter(",
+        "detail": "app.crud.order",
+        "documentation": {}
+    },
+    {
+        "label": "create_order",
+        "kind": 2,
+        "importPath": "app.crud.order",
+        "description": "app.crud.order",
+        "peekOfCode": "def create_order(db: Session, order: schemas.OrderCreate):\n    db_order = models.Order(**order.dict())\n    db.add(db_order)\n    db.commit()\n    db.refresh(db_order)\n    return db_order\ndef update_order(db: Session, order_id: int, order: schemas.OrderUpdate):\n    db_order = db.query(models.Order).filter(\n        models.Order.id == order_id).first()\n    if db_order:",
+        "detail": "app.crud.order",
+        "documentation": {}
+    },
+    {
+        "label": "update_order",
+        "kind": 2,
+        "importPath": "app.crud.order",
+        "description": "app.crud.order",
+        "peekOfCode": "def update_order(db: Session, order_id: int, order: schemas.OrderUpdate):\n    db_order = db.query(models.Order).filter(\n        models.Order.id == order_id).first()\n    if db_order:\n        update_data = order.dict(exclude_unset=True)\n        for key, value in update_data.items():\n            setattr(db_order, key, value)\n        db.commit()\n        db.refresh(db_order)\n    return db_order",
+        "detail": "app.crud.order",
+        "documentation": {}
+    },
+    {
+        "label": "delete_order",
+        "kind": 2,
+        "importPath": "app.crud.order",
+        "description": "app.crud.order",
+        "peekOfCode": "def delete_order(db: Session, order_id: int):\n    db_order = db.query(models.Order).filter(\n        models.Order.id == order_id).first()\n    if db_order:\n        db.delete(db_order)\n        db.commit()\n    return db_order",
+        "detail": "app.crud.order",
+        "documentation": {}
+    },
+    {
         "label": "get_product",
         "kind": 2,
         "importPath": "app.crud.product",
@@ -463,7 +740,7 @@
         "kind": 2,
         "importPath": "app.crud.product",
         "description": "app.crud.product",
-        "peekOfCode": "def get_products(db: Session, skip: int = 0, limit: int = 10):\n    return db.query(models.Product).offset(skip).limit(limit).all()\ndef create_product(db: Session, product: schemas.ProductCreate):\n    db_product = models.Product(**product.dict())\n    db.add(db_product)\n    db.commit()\n    db.refresh(db_product)\n    return db_product\ndef update_product(db: Session, product_id: int, product: schemas.ProductUpdate):\n    db_product = db.query(models.Product).filter(",
+        "peekOfCode": "def get_products(db: Session, skip: int = 0, limit: int = 10):\n    return db.query(models.Product).offset(skip).limit(limit).all()\ndef create_product(db: Session, product: schemas.ProductCreate):\n    db_product = models.Product(**product.dict())\n    db.add(db_product)\n    db.commit()\n    db.refresh(db_product)\n    return db_product\ndef update_product(db: Session, product_id: int, product: schemas.ProductUpdate):\n    try:",
         "detail": "app.crud.product",
         "documentation": {}
     },
@@ -472,7 +749,7 @@
         "kind": 2,
         "importPath": "app.crud.product",
         "description": "app.crud.product",
-        "peekOfCode": "def create_product(db: Session, product: schemas.ProductCreate):\n    db_product = models.Product(**product.dict())\n    db.add(db_product)\n    db.commit()\n    db.refresh(db_product)\n    return db_product\ndef update_product(db: Session, product_id: int, product: schemas.ProductUpdate):\n    db_product = db.query(models.Product).filter(\n        models.Product.id == product_id).first()\n    if db_product:",
+        "peekOfCode": "def create_product(db: Session, product: schemas.ProductCreate):\n    db_product = models.Product(**product.dict())\n    db.add(db_product)\n    db.commit()\n    db.refresh(db_product)\n    return db_product\ndef update_product(db: Session, product_id: int, product: schemas.ProductUpdate):\n    try:\n        db_product = db.query(models.Product).filter(\n            models.Product.id == product_id).first()",
         "detail": "app.crud.product",
         "documentation": {}
     },
@@ -481,7 +758,7 @@
         "kind": 2,
         "importPath": "app.crud.product",
         "description": "app.crud.product",
-        "peekOfCode": "def update_product(db: Session, product_id: int, product: schemas.ProductUpdate):\n    db_product = db.query(models.Product).filter(\n        models.Product.id == product_id).first()\n    if db_product:\n        update_data = product.dict(exclude_unset=True)\n        for key, value in update_data.items():\n            setattr(db_product, key, value)\n        db.commit()\n        db.refresh(db_product)\n    return db_product",
+        "peekOfCode": "def update_product(db: Session, product_id: int, product: schemas.ProductUpdate):\n    try:\n        db_product = db.query(models.Product).filter(\n            models.Product.id == product_id).first()\n        if db_product:\n            update_data = product.dict(exclude_unset=True)\n            for key, value in update_data.items():\n                setattr(db_product, key, value)\n            db.commit()\n            db.refresh(db_product)",
         "detail": "app.crud.product",
         "documentation": {}
     },
@@ -499,7 +776,7 @@
         "kind": 2,
         "importPath": "app.crud.user",
         "description": "app.crud.user",
-        "peekOfCode": "def get_user(db: Session, user_id: int):\n    return db.query(models.User).filter(models.User.id == user_id).first()\ndef create_user(db: Session, user: schemas.UserCreate):\n    hashed_password = get_password_hash(user.password)\n    db_user = models.User(username=user.username,\n                          email=user.email, hashed_password=hashed_password)\n    db.add(db_user)\n    db.commit()\n    db.refresh(db_user)\n    return db_user",
+        "peekOfCode": "def get_user(db: Session, user_id: int):\n    return db.query(models.User).filter(models.User.id == user_id).first()\ndef create_user(db: Session, user: schemas.UserCreate):\n    try:\n        hashed_password = get_password_hash(user.password)\n        db_user = models.User(username=user.username,\n                            email=user.email, hashed_password=hashed_password)\n        db.add(db_user)\n        db.commit()\n        db.refresh(db_user)",
         "detail": "app.crud.user",
         "documentation": {}
     },
@@ -508,7 +785,7 @@
         "kind": 2,
         "importPath": "app.crud.user",
         "description": "app.crud.user",
-        "peekOfCode": "def create_user(db: Session, user: schemas.UserCreate):\n    hashed_password = get_password_hash(user.password)\n    db_user = models.User(username=user.username,\n                          email=user.email, hashed_password=hashed_password)\n    db.add(db_user)\n    db.commit()\n    db.refresh(db_user)\n    return db_user",
+        "peekOfCode": "def create_user(db: Session, user: schemas.UserCreate):\n    try:\n        hashed_password = get_password_hash(user.password)\n        db_user = models.User(username=user.username,\n                            email=user.email, hashed_password=hashed_password)\n        db.add(db_user)\n        db.commit()\n        db.refresh(db_user)\n    except IntegrityError:\n        db.rollback()",
         "detail": "app.crud.user",
         "documentation": {}
     },
@@ -522,11 +799,20 @@
         "documentation": {}
     },
     {
+        "label": "Order",
+        "kind": 6,
+        "importPath": "app.models.order",
+        "description": "app.models.order",
+        "peekOfCode": "class Order(Base):\n    __tablename__ = 'orders'\n    id = Column(Integer, primary_key=True, index=True)\n    user_id = Column(Integer, ForeignKey('users.id'))\n    total_price = Column(Float, nullable=False)\n    status = Column(String, default='pending')\n    created_at = Column(DateTime, default=datetime.utcnow)\n    user = relationship(\"User\", back_populates=\"orders\")",
+        "detail": "app.models.order",
+        "documentation": {}
+    },
+    {
         "label": "Product",
         "kind": 6,
         "importPath": "app.models.product",
         "description": "app.models.product",
-        "peekOfCode": "class Product(Base):\n    __tablename__ = \"products\"\n    id = Column(Integer, primary_key=True, index=True)\n    name = Column(String, index=True)\n    description = Column(String)\n    price = Column(Float)",
+        "peekOfCode": "class Product(Base):\n    __tablename__ = \"products\"\n    id = Column(Integer, primary_key=True, index=True)\n    name = Column(String, index=True)\n    description = Column(String)\n    price = Column(Float)\n    updated_at = Column(DateTime, default=datetime.utcnow,\n                        onupdate=datetime.utcnow)\n    created_at = Column(DateTime, default=datetime.utcnow)",
         "detail": "app.models.product",
         "documentation": {}
     },
@@ -535,7 +821,7 @@
         "kind": 6,
         "importPath": "app.models.user",
         "description": "app.models.user",
-        "peekOfCode": "class User(Base):\n    __tablename__ = \"users\"\n    id = Column(Integer, primary_key=True)\n    email = Column(String, unique=True, index=True)\n    username = Column(String, unique=True, index=True)\n    hashed_password = Column(String)\n    balance = Column(Float)\n    is_active = Column(Boolean, default=True)\n    is_admin = Column(Boolean, default=False)",
+        "peekOfCode": "class User(Base):\n    __tablename__ = 'users'\n    id = Column(Integer, primary_key=True, index=True)\n    username = Column(String, unique=True, index=True)\n    hashed_password = Column(String)\n    email = Column(String, unique=True, index=True)\n    full_name = Column(String)\n    disabled = Column(Boolean, default=False)\n    balance = Column(Float, default=0.0)\n    is_active = Column(Boolean, default=True)",
         "detail": "app.models.user",
         "documentation": {}
     },
@@ -553,8 +839,62 @@
         "kind": 5,
         "importPath": "app.routers.auth",
         "description": "app.routers.auth",
-        "peekOfCode": "router = APIRouter()\n@router.post(\"/token\", response_model=schemas.token.Token)\ndef login_for_access_token(form_data: Annotated[OAuth2PasswordRequestForm, Depends()], db: Session = Depends(get_db)):\n    user = utils.get_user_by_username(db, username=form_data.username)\n    if not user or not verify_password(form_data.password, user.hashed_password):\n        raise HTTPException(\n            status_code=status.HTTP_401_UNAUTHORIZED,\n            detail=\"Incorrect username or password\",\n            headers={\"WWW-Authenticate\": \"Bearer\"},\n        )",
+        "peekOfCode": "router = APIRouter(tags=['Authentication'])\n@router.post(\"/token\", response_model=schemas.token.Token)\ndef login_for_access_token(form_data: Annotated[OAuth2PasswordRequestForm, Depends()], db: Session = Depends(get_db)):\n    user = utils.get_user_by_username(db, username=form_data.username)\n    if not user or not verify_password(form_data.password, user.hashed_password):\n        raise HTTPException(\n            status_code=status.HTTP_401_UNAUTHORIZED,\n            detail=\"Incorrect username or password\",\n            headers={\"WWW-Authenticate\": \"Bearer\"},\n        )",
         "detail": "app.routers.auth",
+        "documentation": {}
+    },
+    {
+        "label": "read_order",
+        "kind": 2,
+        "importPath": "app.routers.orders",
+        "description": "app.routers.orders",
+        "peekOfCode": "def read_order(order_id: int, db: Session = Depends(dependencies.get_db)):\n    db_order = crud.get_order(db, order_id=order_id)\n    if db_order is None:\n        raise HTTPException(status_code=404, detail=\"Order not found\")\n    return db_order\n@router.get(\"/\", response_model=list[schemas.Order])\ndef read_orders(skip: int = 0, limit: int = 10, db: Session = Depends(dependencies.get_db)):\n    orders = crud.get_orders(db, skip=skip, limit=limit)\n    return orders\n@router.post(\"/\", response_model=schemas.Order)",
+        "detail": "app.routers.orders",
+        "documentation": {}
+    },
+    {
+        "label": "read_orders",
+        "kind": 2,
+        "importPath": "app.routers.orders",
+        "description": "app.routers.orders",
+        "peekOfCode": "def read_orders(skip: int = 0, limit: int = 10, db: Session = Depends(dependencies.get_db)):\n    orders = crud.get_orders(db, skip=skip, limit=limit)\n    return orders\n@router.post(\"/\", response_model=schemas.Order)\ndef create_order(order: schemas.OrderCreate, db: Session = Depends(dependencies.get_db)):\n    return crud.create_order(db=db, order=order)\n@router.put(\"/{order_id}\", response_model=schemas.Order)\ndef update_order(order_id: int, order: schemas.OrderUpdate, db: Session = Depends(dependencies.get_db)):\n    db_order = crud.update_order(db, order_id=order_id, order=order)\n    if db_order is None:",
+        "detail": "app.routers.orders",
+        "documentation": {}
+    },
+    {
+        "label": "create_order",
+        "kind": 2,
+        "importPath": "app.routers.orders",
+        "description": "app.routers.orders",
+        "peekOfCode": "def create_order(order: schemas.OrderCreate, db: Session = Depends(dependencies.get_db)):\n    return crud.create_order(db=db, order=order)\n@router.put(\"/{order_id}\", response_model=schemas.Order)\ndef update_order(order_id: int, order: schemas.OrderUpdate, db: Session = Depends(dependencies.get_db)):\n    db_order = crud.update_order(db, order_id=order_id, order=order)\n    if db_order is None:\n        raise HTTPException(status_code=404, detail=\"Order not found\")\n    return db_order\n@router.delete(\"/{order_id}\", response_model=schemas.Order)\ndef delete_order(order_id: int, db: Session = Depends(dependencies.get_db)):",
+        "detail": "app.routers.orders",
+        "documentation": {}
+    },
+    {
+        "label": "update_order",
+        "kind": 2,
+        "importPath": "app.routers.orders",
+        "description": "app.routers.orders",
+        "peekOfCode": "def update_order(order_id: int, order: schemas.OrderUpdate, db: Session = Depends(dependencies.get_db)):\n    db_order = crud.update_order(db, order_id=order_id, order=order)\n    if db_order is None:\n        raise HTTPException(status_code=404, detail=\"Order not found\")\n    return db_order\n@router.delete(\"/{order_id}\", response_model=schemas.Order)\ndef delete_order(order_id: int, db: Session = Depends(dependencies.get_db)):\n    db_order = crud.delete_order(db, order_id=order_id)\n    if db_order is None:\n        raise HTTPException(status_code=404, detail=\"Order not found\")",
+        "detail": "app.routers.orders",
+        "documentation": {}
+    },
+    {
+        "label": "delete_order",
+        "kind": 2,
+        "importPath": "app.routers.orders",
+        "description": "app.routers.orders",
+        "peekOfCode": "def delete_order(order_id: int, db: Session = Depends(dependencies.get_db)):\n    db_order = crud.delete_order(db, order_id=order_id)\n    if db_order is None:\n        raise HTTPException(status_code=404, detail=\"Order not found\")\n    return db_order",
+        "detail": "app.routers.orders",
+        "documentation": {}
+    },
+    {
+        "label": "router",
+        "kind": 5,
+        "importPath": "app.routers.orders",
+        "description": "app.routers.orders",
+        "peekOfCode": "router = APIRouter(tags=['Order'])\n@router.get(\"/{order_id}\", response_model=schemas.Order)\ndef read_order(order_id: int, db: Session = Depends(dependencies.get_db)):\n    db_order = crud.get_order(db, order_id=order_id)\n    if db_order is None:\n        raise HTTPException(status_code=404, detail=\"Order not found\")\n    return db_order\n@router.get(\"/\", response_model=list[schemas.Order])\ndef read_orders(skip: int = 0, limit: int = 10, db: Session = Depends(dependencies.get_db)):\n    orders = crud.get_orders(db, skip=skip, limit=limit)",
+        "detail": "app.routers.orders",
         "documentation": {}
     },
     {
@@ -562,7 +902,7 @@
         "kind": 2,
         "importPath": "app.routers.products",
         "description": "app.routers.products",
-        "peekOfCode": "def create_product(product: schemas.ProductCreate, db: Session = Depends(get_db)):\n    return crud.create_product(db=db, product=product)\n@router.get(\"/products/\", response_model=List[schemas.Product])\ndef read_products(skip: int = 0, limit: int = 10, db: Session = Depends(get_db)):\n    products = crud.get_products(db, skip=skip, limit=limit)\n    return products\n@router.put(\"/products/{id}\", response_model=List[schemas.Product])\ndef read_products(id: int, db: Session = Depends(get_db)):\n    products = crud.get_products(db, skip=skip, limit=limit)\n    return products",
+        "peekOfCode": "def create_product(product: schemas.ProductCreate, db: Session = Depends(get_db)):\n    return crud.create_product(db=db, product=product)\n@router.get(\"/products/\", response_model=List[schemas.Product])\ndef read_products(skip: int = 0, limit: int = 10, db: Session = Depends(get_db)):\n    products = crud.get_products(db, skip=skip, limit=limit)\n    return products\n@router.put(\"/products/{id}\", response_model=schemas.Product)\ndef read_products(id: int, product: schemas.ProductUpdate, db: Session = Depends(get_db)):\n    product = crud.update_product(db, id, product)\n    return product",
         "detail": "app.routers.products",
         "documentation": {}
     },
@@ -571,7 +911,7 @@
         "kind": 2,
         "importPath": "app.routers.products",
         "description": "app.routers.products",
-        "peekOfCode": "def read_products(skip: int = 0, limit: int = 10, db: Session = Depends(get_db)):\n    products = crud.get_products(db, skip=skip, limit=limit)\n    return products\n@router.put(\"/products/{id}\", response_model=List[schemas.Product])\ndef read_products(id: int, db: Session = Depends(get_db)):\n    products = crud.get_products(db, skip=skip, limit=limit)\n    return products",
+        "peekOfCode": "def read_products(skip: int = 0, limit: int = 10, db: Session = Depends(get_db)):\n    products = crud.get_products(db, skip=skip, limit=limit)\n    return products\n@router.put(\"/products/{id}\", response_model=schemas.Product)\ndef read_products(id: int, product: schemas.ProductUpdate, db: Session = Depends(get_db)):\n    product = crud.update_product(db, id, product)\n    return product",
         "detail": "app.routers.products",
         "documentation": {}
     },
@@ -580,7 +920,7 @@
         "kind": 2,
         "importPath": "app.routers.products",
         "description": "app.routers.products",
-        "peekOfCode": "def read_products(id: int, db: Session = Depends(get_db)):\n    products = crud.get_products(db, skip=skip, limit=limit)\n    return products",
+        "peekOfCode": "def read_products(id: int, product: schemas.ProductUpdate, db: Session = Depends(get_db)):\n    product = crud.update_product(db, id, product)\n    return product",
         "detail": "app.routers.products",
         "documentation": {}
     },
@@ -589,7 +929,7 @@
         "kind": 5,
         "importPath": "app.routers.products",
         "description": "app.routers.products",
-        "peekOfCode": "router = APIRouter()\n@router.post(\"/products/\", response_model=schemas.Product)\ndef create_product(product: schemas.ProductCreate, db: Session = Depends(get_db)):\n    return crud.create_product(db=db, product=product)\n@router.get(\"/products/\", response_model=List[schemas.Product])\ndef read_products(skip: int = 0, limit: int = 10, db: Session = Depends(get_db)):\n    products = crud.get_products(db, skip=skip, limit=limit)\n    return products\n@router.put(\"/products/{id}\", response_model=List[schemas.Product])\ndef read_products(id: int, db: Session = Depends(get_db)):",
+        "peekOfCode": "router = APIRouter(\n    tags=['Product']\n)\n@router.post(\"/products/\", response_model=schemas.Product)\ndef create_product(product: schemas.ProductCreate, db: Session = Depends(get_db)):\n    return crud.create_product(db=db, product=product)\n@router.get(\"/products/\", response_model=List[schemas.Product])\ndef read_products(skip: int = 0, limit: int = 10, db: Session = Depends(get_db)):\n    products = crud.get_products(db, skip=skip, limit=limit)\n    return products",
         "detail": "app.routers.products",
         "documentation": {}
     },
@@ -616,8 +956,44 @@
         "kind": 5,
         "importPath": "app.routers.users",
         "description": "app.routers.users",
-        "peekOfCode": "router = APIRouter()\n@router.post(\"/users/\", response_model=schemas.User)\ndef create_user(user: schemas.UserCreate, db: Session = Depends(get_db)):\n    db_user = utils.get_user_by_username(db, username=user.username)\n    if db_user:\n        raise HTTPException(\n            status_code=400, detail=\"Username already registered\")\n    return crud.user.create_user(db=db, user=user)\n@router.get(\"/users/me/\", response_model=schemas.User)\ndef read_users_me(current_user: schemas.User = Depends(get_current_active_user)):",
+        "peekOfCode": "router = APIRouter(tags=['User'])\n@router.post(\"/users/\", response_model=schemas.User)\ndef create_user(user: schemas.UserCreate, db: Session = Depends(get_db)):\n    db_user = utils.get_user_by_username(db, username=user.username)\n    if db_user:\n        raise HTTPException(\n            status_code=400, detail=\"Username already registered\")\n    return crud.user.create_user(db=db, user=user)\n@router.get(\"/users/me/\", response_model=schemas.User)\ndef read_users_me(current_user: schemas.User = Depends(get_current_active_user)):",
         "detail": "app.routers.users",
+        "documentation": {}
+    },
+    {
+        "label": "OrderBase",
+        "kind": 6,
+        "importPath": "app.schemas.order",
+        "description": "app.schemas.order",
+        "peekOfCode": "class OrderBase(BaseModel):\n    user_id: int\n    total_price: float\n    status: Optional[str] = \"pending\"\n    created_at: datetime = datetime.now()\n    updated_at: datetime = datetime.now()\nclass OrderCreate(OrderBase):\n    pass\nclass OrderUpdate(BaseModel):\n    total_price: Optional[float] = None",
+        "detail": "app.schemas.order",
+        "documentation": {}
+    },
+    {
+        "label": "OrderCreate",
+        "kind": 6,
+        "importPath": "app.schemas.order",
+        "description": "app.schemas.order",
+        "peekOfCode": "class OrderCreate(OrderBase):\n    pass\nclass OrderUpdate(BaseModel):\n    total_price: Optional[float] = None\n    status: Optional[str] = None\n    updated_at: datetime = datetime.now()\nclass Order(OrderBase):\n    id: int\n    created_at: datetime\n    updated_at: datetime",
+        "detail": "app.schemas.order",
+        "documentation": {}
+    },
+    {
+        "label": "OrderUpdate",
+        "kind": 6,
+        "importPath": "app.schemas.order",
+        "description": "app.schemas.order",
+        "peekOfCode": "class OrderUpdate(BaseModel):\n    total_price: Optional[float] = None\n    status: Optional[str] = None\n    updated_at: datetime = datetime.now()\nclass Order(OrderBase):\n    id: int\n    created_at: datetime\n    updated_at: datetime\n    class Config:\n        orm_mode = True",
+        "detail": "app.schemas.order",
+        "documentation": {}
+    },
+    {
+        "label": "Order",
+        "kind": 6,
+        "importPath": "app.schemas.order",
+        "description": "app.schemas.order",
+        "peekOfCode": "class Order(OrderBase):\n    id: int\n    created_at: datetime\n    updated_at: datetime\n    class Config:\n        orm_mode = True",
+        "detail": "app.schemas.order",
         "documentation": {}
     },
     {
@@ -625,7 +1001,7 @@
         "kind": 6,
         "importPath": "app.schemas.product",
         "description": "app.schemas.product",
-        "peekOfCode": "class ProductBase(BaseModel):\n    name: str\n    description: str\n    price: float\nclass ProductCreate(ProductBase):\n    pass\nclass ProductUpdate(BaseModel):\n    name: Optional[str] = None\n    description: Optional[str] = None\n    price: Optional[float] = None",
+        "peekOfCode": "class ProductBase(BaseModel):\n    name: str\n    description: str\n    price: float\n    created_at: datetime\n    updated_at: datetime\nclass ProductCreate(ProductBase):\n    pass\nclass ProductUpdate(BaseModel):\n    name: Optional[str] = None",
         "detail": "app.schemas.product",
         "documentation": {}
     },
@@ -634,7 +1010,7 @@
         "kind": 6,
         "importPath": "app.schemas.product",
         "description": "app.schemas.product",
-        "peekOfCode": "class ProductCreate(ProductBase):\n    pass\nclass ProductUpdate(BaseModel):\n    name: Optional[str] = None\n    description: Optional[str] = None\n    price: Optional[float] = None\nclass Product(ProductBase):\n    id: int\n    class Config:\n        orm_mode = True",
+        "peekOfCode": "class ProductCreate(ProductBase):\n    pass\nclass ProductUpdate(BaseModel):\n    name: Optional[str] = None\n    description: Optional[str] = None\n    price: Optional[float] = None\n    updated_at: datetime = datetime.now()\nclass Product(ProductBase):\n    id: int\n    class Config:",
         "detail": "app.schemas.product",
         "documentation": {}
     },
@@ -643,7 +1019,7 @@
         "kind": 6,
         "importPath": "app.schemas.product",
         "description": "app.schemas.product",
-        "peekOfCode": "class ProductUpdate(BaseModel):\n    name: Optional[str] = None\n    description: Optional[str] = None\n    price: Optional[float] = None\nclass Product(ProductBase):\n    id: int\n    class Config:\n        orm_mode = True",
+        "peekOfCode": "class ProductUpdate(BaseModel):\n    name: Optional[str] = None\n    description: Optional[str] = None\n    price: Optional[float] = None\n    updated_at: datetime = datetime.now()\nclass Product(ProductBase):\n    id: int\n    class Config:\n        orm_mode = True",
         "detail": "app.schemas.product",
         "documentation": {}
     },
@@ -679,7 +1055,7 @@
         "kind": 6,
         "importPath": "app.schemas.user",
         "description": "app.schemas.user",
-        "peekOfCode": "class UserBase(BaseModel):\n    username: str\n    email: str\nclass UserCreate(UserBase):\n    password: str\nclass User(UserBase):\n    id: int\n    is_active: bool\n    is_admin: bool\n    class Config:",
+        "peekOfCode": "class UserBase(BaseModel):\n    username: str\n    email: str\n    created_at: datetime = datetime.now()\n    updated_at: datetime = datetime.now()\nclass UserCreate(UserBase):\n    password: str\nclass User(UserBase):\n    id: int\n    is_active: bool",
         "detail": "app.schemas.user",
         "documentation": {}
     },
@@ -796,7 +1172,7 @@
         "kind": 5,
         "importPath": "app.main",
         "description": "app.main",
-        "peekOfCode": "app = FastAPI()\napp.include_router(auth.router)\napp.include_router(users.router)\napp.include_router(products.router)",
+        "peekOfCode": "app = FastAPI()\napp.include_router(auth.router)\napp.include_router(users.router)\napp.include_router(products.router)\napp.include_router(orders.router)",
         "detail": "app.main",
         "documentation": {}
     },

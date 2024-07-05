@@ -14,5 +14,8 @@ class Order(Base):
     total_price = Column(Float, nullable=False)
     status = Column(String, default='pending')
     created_at = Column(DateTime, default=datetime.utcnow)
+    updated_at = Column(DateTime, default=datetime.utcnow)
 
     user = relationship("User", back_populates="orders")
+    products = relationship(
+        "Product", secondary="order_products", back_populates="orders")

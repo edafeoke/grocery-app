@@ -2,11 +2,12 @@
 
 from pydantic import BaseModel
 from datetime import datetime
-from typing import Optional
+from typing import List, Optional
+from ..schemas.product import Product
 
 
 class OrderBase(BaseModel):
-    user_id: int
+    
     total_price: float
     status: Optional[str] = "pending"
     created_at: datetime = datetime.now()
@@ -14,7 +15,7 @@ class OrderBase(BaseModel):
 
 
 class OrderCreate(OrderBase):
-    pass
+    product_ids: List[int]
 
 
 class OrderUpdate(BaseModel):
@@ -25,8 +26,10 @@ class OrderUpdate(BaseModel):
 
 class Order(OrderBase):
     id: int
+    user_id: int
     created_at: datetime
     updated_at: datetime
+    products: List[Product] = []
 
     class Config:
         orm_mode = True

@@ -5,7 +5,6 @@ from ..dependencies import get_db, get_current_active_user
 
 router = APIRouter(tags=['User'])
 
-
 @router.post("/users/", response_model=schemas.User)
 def create_user(user: schemas.UserCreate, db: Session = Depends(get_db)):
     db_user = utils.get_user_by_username(db, username=user.username)
